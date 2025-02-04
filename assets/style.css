@@ -48,26 +48,26 @@ nav ul li a.active {
     text-decoration: underline;
 }
 
-/* Responsive design to adjust spacing and font size */
+/* Navbar: adjust spacing and font size */
 @media (max-width: 800px) {
     nav ul li {
-        margin: 0 10px; /* Reduce margin between items */
+        margin: 0 10px; 
     }
 
     nav ul li a {
-        font-size: 14px; /* Adjust font size */
-        padding: 8px 10px; /* Adjust padding */
+        font-size: 14px; 
+        padding: 8px 10px; 
     }
 }
 
 @media (max-width: 600px) {
     nav ul li {
-        margin: 0 5px; /* Further reduce margin */
+        margin: 0 5px; 
     }
 
     nav ul li a {
-        font-size: 12px; /* Further adjust font size */
-        padding: 5px 8px; /* Further adjust padding */
+        font-size: 12px; 
+        padding: 5px 8px; 
     }
 }
 
