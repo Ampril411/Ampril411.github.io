@@ -1,4 +1,4 @@
-/* body */
+/* ===== Global Styles ===== */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -7,7 +7,7 @@ body {
     padding-top: 60px; 
 }
 
-/* Navbar */
+/* ===== Navbar Styles ===== */
 nav {
     display: flex;
     justify-content: center;
@@ -24,23 +24,23 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     padding: 0;
     margin: 0;
-    width: 100%; 
+    width: 100%;
 }
 
 nav ul li {
     display: inline-block;
-    margin: 0 15px; 
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     padding: 10px 15px;
-    display: block; 
+    display: block;
 }
 
 nav ul li a.active {
@@ -48,8 +48,7 @@ nav ul li a.active {
     text-decoration: underline;
 }
 
-
-/* head */
+/* ===== Header Styles ===== */
 header {
     background-color: white;
     color: darkblue;
@@ -57,14 +56,13 @@ header {
 }
 
 header img {
-    max-width: 100%; 
-    height: auto;     
+    max-width: 100%;
+    height: auto;
     display: block;
-    margin: 0 auto;   
+    margin: 0 auto;
 }
 
-
-/* game page */
+/* ===== Game Page Styles ===== */
 .game-container {
     display: flex;
     justify-content: space-around;
@@ -146,47 +144,35 @@ header img {
     width: fit-content;
 }
 
-/* button */
-button {
-    padding: 10px 20px;
-    background-color: red;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out;
-}
-
-button:hover {
-    background-color: darkred;
-}
-
-/* rules */
+/* ===== Text Styles ===== */
 h1, h2 {
     color: darkblue;
     margin-top: 80px;
 }
 
-ol, ul {
-    text-align: left;
-    max-width: 600px;
+p, ol, ul {
+    max-width: 95%;
     margin: 0 auto;
-    padding-left: 20px;
+    text-align: left;
+    word-wrap: break-word;
+    word-break: break-word;
 }
 
 ol {
     list-style-type: decimal;
+    padding-left: 20px;
 }
 
 ul {
     list-style-type: square;
+    padding-left: 20px;
 }
 
 ul li span {
     font-size: 18px;
 }
 
-
-/* hight scores */
+/* ===== High Scores Table ===== */
 table {
     width: 60%;
     margin: 20px auto;
@@ -205,13 +191,29 @@ th {
     font-weight: bold;
 }
 
+/* ===== Media Queries ===== */
 @media (max-width: 600px) {
     nav ul {
-        display: flex;
         flex-direction: column;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 75%;
+        padding-top: 20px;
     }
-    
-    table {
-        width: 100%;
+
+    nav ul li {
+        margin: 20px 0;
+    }
+
+    nav ul li a {
+        padding: 15px 20px;
+        text-align: left;
+    }
+
+    body {
+        margin-left: 75%; 
     }
 }
