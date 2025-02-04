@@ -4,21 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Rules</title>
-    <link rel="stylesheet" href="css/rules.css">
-    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="homepage.html">Home</a></li>
             <li><a href="game.html">Game</a></li>
             <li><a href="rules.html" class="active">Rules</a></li>
-            <li><a href="high-scores.html">High Scores</a></li>
+            <li><a href="high_scores.html">High Scores</a></li>
         </ul>
     </nav>
+
     <h1>Battleship Rules</h1>
-    <p>Here are the rules of the game...</p>
+
+    <h2>Game Overview</h2>
+    <p><strong>Battleship</strong> (also known as <em>Battleships</em>) is a strategy-based guessing game for two players.</p>
+    <p>Each player places their fleet of warships on a **ruled grid** (paper or board). The objective is to **sink all opponent's ships**.</p>
+
+    <h2>How to Play</h2>
+    <ol>
+        <li>Each player secretly arranges their ships on a ”5x5“ grid.</li>
+        <li>Players take turns guessing a grid position to "fire" at the opponent's board.</li>
+        <li>If a ship is ”hit“, that position is marked as a hit.</li>
+        <li>If the shot “misses”, that position is marked as a miss.</li>
+        <li>The game continues until one player hits all opponent's ships.</li>
+    </ol>
+
+    <h2>Grid Colors</h2>
+    <ul>
+        <li><span style="color: red; font-weight: bold;">Red</span> - A “hit” on an opponent's ship.</li>
+        <li><span style="color: blue; font-weight: bold;">Blue</span> - A “miss” (no ship in that position).</li>
+        <li><span style="color: gray; font-weight: bold;">Gray</span> - Ship's position.</li>
+    </ul>
+
     <h2>Credits</h2>
     <p>Created by: <a href="https://github.com/yourgithub">Ampril411</a></p>
+
 </body>
 </html>

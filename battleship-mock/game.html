@@ -3,23 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Board</title>
-    <link rel="stylesheet" href="css/game.css">
-    <link rel="stylesheet" href="css/navbar.css">
+    <title>Battleship Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="homepage.html">Home</a></li>
             <li><a href="game.html" class="active">Game</a></li>
             <li><a href="rules.html">Rules</a></li>
-            <li><a href="high-scores.html">High Scores</a></li>
+            <li><a href="high_scores.html">High Scores</a></li>
         </ul>
     </nav>
-    <h1>Game in Progress</h1>
-    <div class="board">
-        <p>Mock Battleship Board</p>
-        <button>Restart</button>
+    <h1>Battleship Game</h1>
+    <div id="timer">Time: <span>03:25</span></div> <!-- a set timer -->
+    <div class="game-container">
+        <!-- Player 1 Board -->
+        <div class="board-container">
+            <h2>Player 1 Board</h2>
+            <div class="board">
+                <!-- Generate 5x5 grid -->
+                <div class="cell hit"></div>
+                <div class="cell miss"></div>
+                <div class="cell ship"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell ship"></div>
+                <div class="cell"></div>
+                <div class="cell hit"></div>
+                <div class="cell"></div>
+                <div class="cell miss"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell ship"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell hit"></div>
+                <div class="cell"></div>
+            </div>
+        </div>
+
+        <!-- Player 2 Board -->
+        <div class="board-container">
+            <h2>Player 2 Board</h2>
+            <div class="board">
+                <!-- Generate 5x5 grid -->
+                <div class="cell"></div>
+                <div class="cell miss"></div>
+                <div class="cell hit"></div>
+                <div class="cell ship"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell ship"></div>
+                <div class="cell"></div>
+                <div class="cell hit"></div>
+                <div class="cell miss"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell ship"></div>
+                <div class="cell"></div>
+            </div>
+        </div>
     </div>
+    <button class="restart-button">Restart</button>
 </body>
 </html>
